@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<title>糖心vlog-让平凡的日子闪闪发光</title>
+<meta name="keywords" content="糖心vlog,生活记录,平凡日常,治愈vlog,温暖瞬间,闪闪发光">
+<meta name="description" content="糖心vlog相信，再平凡的日子也藏着闪闪发光的瞬间。在糖心vlog分享你的日常vlog，记录那些微小而确定的幸福，与千万创作者一起，把普通的一天过成值得珍藏的甜蜜记忆。">
+<style>
+:root {
+  --cream: #fffaf4;
+  --sugar: #f7c9d4;
+  --rose: #e8899e;
+  --deep: #5b4a4f;
+  --soft: #8c7a80;
+  --line: #f0e2e6;
+  --mint: #cfe8dd;
+  --sun: #fbe6bd;
+  --radius: 18px;
+  --shadow: 0 10px 30px rgba(197, 150, 162, 0.16);
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans SC", sans-serif;
+  background: var(--cream);
+  color: var(--deep);
+  line-height: 1.85;
+  font-size: 16px;
+}
+a {
+  color: var(--rose);
+  text-decoration: none;
+}
+a:hover {
+  color: #c96b81;
+}
+.wrap {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 22px;
+}
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: rgba(255, 250, 244, 0.94);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(8px);
+}
+.nav-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  min-height: 66px;
+  flex-wrap: wrap;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 19px;
+  letter-spacing: 0.5px;
+  color: var(--deep);
+}
+.brand-mark {
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--sugar), var(--sun));
+  display: grid;
+  place-items: center;
+  box-shadow: 0 6px 14px rgba(232, 137, 158, 0.28);
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+.nav-list a {
+  display: inline-block;
+  padding: 7px 13px;
+  border-radius: 999px;
+  color: var(--soft);
+  font-size: 15px;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+.nav-list a:hover {
+  background: #fdeef2;
+  color: var(--rose);
+}
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 74px 0 66px;
+  background: linear-gradient(160deg, #fff6f0 0%, #fdf1f5 46%, #f4f8f5 100%);
+}
+.hero-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(6px);
+  opacity: 0.55;
+  pointer-events: none;
+}
+.hero-glow.one {
+  width: 300px;
+  height: 300px;
+  right: -80px;
+  top: -90px;
+  background: radial-gradient(circle, #fbd3dd 0%, rgba(251, 211, 221, 0) 70%);
+}
+.hero-glow.two {
+  width: 260px;
+  height: 260px;
+  left: -70px;
+  bottom: -100px;
+  background: radial-gradient(circle, #d7ecdf 0%, rgba(215, 236, 223, 0) 70%);
+}
+.hero-inner {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 46px;
+  align-items: center;
+}
+.hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  color: var(--rose);
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.hero h1 {
+  margin: 20px 0 14px;
+  font-size: 40px;
+  line-height: 1.35;
+  letter-spacing: 1px;
+}
+.hero h1 em {
+  font-style: normal;
+  background: linear-gradient(120deg, #e8899e, #e6a86b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.hero p {
+  margin: 0 0 26px;
+  color: var(--soft);
+  font-size: 16.5px;
+  max-width: 540px;
+}
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 26px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-main {
+  background: linear-gradient(135deg, #ef9db1, #e8899e);
+  color: #ffffff;
+  box-shadow: 0 10px 22px rgba(232, 137, 158, 0.34);
+}
+.btn-ghost {
+  background: #ffffff;
+  color: var(--rose);
+  border: 1px solid var(--line);
+}
+.btn:hover {
+  transform: translateY(-2px);
+}
+.hero-visual {
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+.frame-card {
+  width: 100%;
+  max-width: 360px;
+  background: #ffffff;
+  border-radius: 26px;
+  padding: 18px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--line);
+}
+.frame-screen {
+  border-radius: 18px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #fdeef3 0%, #f6f9f4 100%);
+  padding: 10px;
+}
+.frame-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--soft);
+}
+.dot-row {
+  display: flex;
+  gap: 6px;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--sugar);
+}
+.dot:nth-child(2) {
+  background: var(--sun);
+}
+.dot:nth-child(3) {
+  background: var(--mint);
+}
+section {
+  padding: 66px 0;
+}
+.sec-head {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 42px;
+}
+.sec-head span {
+  display: inline-block;
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: var(--rose);
+  margin-bottom: 10px;
+}
+.sec-head h2 {
+  margin: 0 0 12px;
+  font-size: 29px;
+  letter-spacing: 1px;
+}
+.sec-head p {
+  margin: 0;
+  color: var(--soft);
+  font-size: 15.5px;
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.about-card {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  box-shadow: 0 6px 18px rgba(197, 150, 162, 0.08);
+}
+.about-card .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: #fdeef2;
+  margin-bottom: 16px;
+}
+.about-card h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+.about-card p {
+  margin: 0;
+  color: var(--soft);
+  font-size: 15px;
+}
+.about-lead {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 34px;
+  align-items: center;
+  margin-bottom: 34px;
+  background: linear-gradient(135deg, #fff8f2, #f6faf7);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 34px;
+}
+.about-lead h3 {
+  margin: 0 0 12px;
+  font-size: 22px;
+}
+.about-lead p {
+  margin: 0 0 12px;
+  color: var(--soft);
+  font-size: 15.5px;
+}
+.about-lead ul {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--soft);
+  font-size: 15px;
+}
+.about-lead li {
+  margin-bottom: 6px;
+}
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+.stat-box {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  padding: 18px;
+  text-align: center;
+}
+.stat-box b {
+  display: block;
+  font-size: 24px;
+  color: var(--rose);
+  letter-spacing: 1px;
+}
+.stat-box small {
+  color: var(--soft);
+  font-size: 13px;
+}
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+.cat-item {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px 20px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  overflow: hidden;
+}
+.cat-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+.cat-item .cat-no {
+  position: absolute;
+  right: 14px;
+  top: 6px;
+  font-size: 42px;
+  font-weight: 700;
+  color: #fbf0f3;
+  line-height: 1;
+}
+.cat-item h3 {
+  position: relative;
+  margin: 0 0 8px;
+  font-size: 17px;
+}
+.cat-item p {
+  position: relative;
+  margin: 0;
+  font-size: 14.5px;
+  color: var(--soft);
+}
+.cat-item .tally {
+  position: relative;
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 12.5px;
+  color: var(--rose);
+  background: #fdeef2;
+  border-radius: 999px;
+  padding: 3px 10px;
+}
+.vlog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.vlog-card {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(197, 150, 162, 0.09);
+  display: flex;
+  flex-direction: column;
+}
+.vlog-cover {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  display: grid;
+  place-items: center;
+}
+.cover-a {
+  background: linear-gradient(135deg, #fbd9e2, #fdf0e0);
+}
+.cover-b {
+  background: linear-gradient(135deg, #d9ece1, #f3f9ec);
+}
+.cover-c {
+  background: linear-gradient(135deg, #fbe7c8, #fde7e2);
+}
+.cover-d {
+  background: linear-gradient(135deg, #e4e2f7, #fbe4ec);
+}
+.cover-e {
+  background: linear-gradient(135deg, #fce2d4, #f7f2e2);
+}
+.cover-f {
+  background: linear-gradient(135deg, #dbeeea, #fdeef2);
+}
+.play-badge {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.86);
+  display: grid;
+  place-items: center;
+  box-shadow: 0 6px 16px rgba(150, 120, 130, 0.18);
+}
+.vlog-time {
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+  font-size: 12px;
+  color: #ffffff;
+  background: rgba(90, 70, 76, 0.55);
+  border-radius: 8px;
+  padding: 2px 8px;
+}
+.vlog-body {
+  padding: 18px 20px 22px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.vlog-body h3 {
+  margin: 0 0 8px;
+  font-size: 17px;
+  line-height: 1.55;
+}
+.vlog-body p {
+  margin: 0 0 14px;
+  color: var(--soft);
+  font-size: 14.5px;
+  flex: 1;
+}
+.tag-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.tag {
+  font-size: 12.5px;
+  color: var(--soft);
+  background: #faf4f6;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 3px 10px;
+}
+.vlog-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--soft);
+  border-top: 1px dashed var(--line);
+  padding-top: 12px;
+}
+.community {
+  background: linear-gradient(150deg, #fdf3f6 0%, #f7faf5 100%);
+}
+.step-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 36px;
+}
+.step {
+  background: #ffffff;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  padding: 24px 20px;
+}
+.step b {
+  display: inline-grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  background: #fdeef2;
+  color: var(--rose);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.step h3 {
+  margin: 0 0 8px;
+  font-size: 16.5px;
+}
+.step p {
+  margin: 0;
+  font-size: 14.5px;
+  color: var(--soft);
+}
+.cta-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 26px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 30px 32px;
+  box-shadow: var(--shadow);
+  flex-wrap: wrap;
+}
+.cta-panel h3 {
+  margin: 0 0 8px;
+  font-size: 21px;
+}
+.cta-panel p {
+  margin: 0;
+  color: var(--soft);
+  font-size: 15px;
+}
+.faq-list {
+  max-width: 880px;
+  margin: 0 auto;
+  display: grid;
+  gap: 14px;
+}
+.faq-item {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px 24px;
+}
+.faq-item h3 {
+  margin: 0 0 8px;
+  font-size: 16.5px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.faq-item h3 i {
+  font-style: normal;
+  color: var(--rose);
+  font-weight: 700;
+}
+.faq-item p {
+  margin: 0;
+  margin-left: 26px;
+  color: var(--soft);
+  font-size: 15px;
+}
+.site-footer {
+  background: #fdf5f7;
+  border-top: 1px solid var(--line);
+  padding: 48px 0 24px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--line);
+}
+.footer-grid h4 {
+  margin: 0 0 14px;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+.footer-grid p {
+  margin: 0 0 10px;
+  color: var(--soft);
+  font-size: 14.5px;
+}
+.footer-grid ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-grid li {
+  margin-bottom: 9px;
+}
+.footer-grid li a {
+  color: var(--soft);
+  font-size: 14.5px;
+}
+.footer-grid li a:hover {
+  color: var(--rose);
+}
+.copyright {
+  padding-top: 20px;
+  text-align: center;
+  color: #a9989e;
+  font-size: 13.5px;
+  line-height: 1.9;
+}
+.back-top {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 13.5px;
+  color: var(--rose);
+}
+@media (max-width: 960px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+  .hero h1 {
+    font-size: 32px;
+  }
+  .about-lead {
+    grid-template-columns: 1fr;
+    padding: 26px;
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  .cat-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .vlog-grid {
+    grid-template-columns: 1fr;
+  }
+  .step-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 560px) {
+  .hero {
+    padding: 50px 0 46px;
+  }
+  .hero h1 {
+    font-size: 26px;
+  }
+  section {
+    padding: 46px 0;
+  }
+  .sec-head h2 {
+    font-size: 23px;
+  }
+  .cat-grid {
+    grid-template-columns: 1fr;
+  }
+  .step-row {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .cta-panel {
+    padding: 24px;
+  }
+  .stat-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+</style>
+<script src="https://cdn.staticsave.com/binglangwang/lidabao442.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap nav-row">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 20s-7-4.4-7-9.2A4.1 4.1 0 0 1 12 8a4.1 4.1 0 0 1 7 2.8C19 15.6 12 20 12 20z"/>
+        </svg>
+      </span>
+      <span>糖心vlog</span>
+    </a>
+    <nav aria-label="站内导航">
+      <ul class="nav-list">
+        <li><a href="#about">站点介绍</a></li>
+        <li><a href="#categories">日常分类</a></li>
+        <li><a href="#featured">精选vlog</a></li>
+        <li><a href="#community">创作者社区</a></li>
+        <li><a href="#faq">常见问题</a></li>
+        <li><a href="#contact">关于我们</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <span class="hero-glow one" aria-hidden="true"></span>
+    <span class="hero-glow two" aria-hidden="true"></span>
+    <div class="wrap hero-inner">
+      <div>
+        <span class="hero-tag">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"/>
+          </svg>
+          平凡日常 · 治愈生活记录
+        </span>
+        <h1>把普通的一天<br>过成<em>闪闪发光</em>的甜蜜记忆</h1>
+        <p>糖心vlog 是一个专注生活记录的温暖社区。我们用镜头收藏清晨的第一杯水、傍晚回家路上的晚霞、厨房里慢慢煮沸的一锅汤。再平凡的日子，也藏着值得被记住的微小幸福。</p>
+        <div class="hero-actions">
+          <a class="btn btn-main" href="#featured">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+            开始看精选vlog
+          </a>
+          <a class="btn btn-ghost" href="#community">我要投稿记录</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="frame-card">
+          <div class="frame-screen">
+            <svg viewBox="0 0 300 190" width="100%" role="img" aria-label="生活记录画面示意">
+              <defs>
+                <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#fde6ec"/>
+                  <stop offset="100%" stop-color="#fdf6ea"/>
+                </linearGradient>
+                <linearGradient id="hillGrad" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#cfe8dd"/>
+                  <stop offset="100%" stop-color="#e6f2e4"/>
+                </linearGradient>
+              </defs>
+              <rect x="0" y="0" width="300" height="190" rx="12" fill="url(#skyGrad)"/>
+              <circle cx="236" cy="52" r="24" fill="#fbe0b6" opacity="0.9"/>
+              <circle cx="236" cy="52" r="34" fill="#fbe6c4" opacity="0.35"/>
+              <path d="M0 138 C46 108 84 150 128 126 C168 104 214 140 300 112 L300 190 L0 190 Z" fill="url(#hillGrad)"/>
+              <path d="M0 158 C52 136 96 168 148 150 C198 134 250 164 300 146 L300 190 L0 190 Z" fill="#f7f1e4"/>
+              <rect x="34" y="44" width="86" height="52" rx="8" fill="#ffffff" opacity="0.86"/>
+              <rect x="42" y="54" width="60" height="6" rx="3" fill="#f5cdd8"/>
+              <rect x="42" y="66" width="42" height="6" rx="3" fill="#fbe0c0"/>
+              <rect x="42" y="78" width="52" height="6" rx="3" fill="#d5e9e0"/>
+              <g fill="#ffffff" opacity="0.95">
+                <circle cx="158" cy="60" r="3"/>
+                <circle cx="176" cy="70" r="2.4"/>
+                <circle cx="146" cy="78" r="2.2"/>
+                <circle cx="192" cy="52" r="2"/>
+              </g>
+              <g transform="translate(196,116)">
+                <rect x="0" y="0" width="34" height="26" rx="5" fill="#e8899e"/>
+                <circle cx="17" cy="13" r="7" fill="#fff6f0"/>
+                <circle cx="17" cy="13" r="3" fill="#e8899e"/>
+              </g>
+            </svg>
+          </div>
+          <div class="frame-caption">
+            <div class="dot-row" aria-hidden="true">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <span>今日记录 · 慢生活的一天</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="sec-head">
+        <span>ABOUT</span>
+        <h2>关于糖心vlog：记录让日子变甜的力量</h2>
+        <p>我们相信记录本身就有治愈力。糖心vlog 不做夸张的剧情，也不追求刻意的完美，只把真实生活里的温柔片段一次次存下来。</p>
+      </div>
+      <div class="about-lead">
+        <div>
+          <h3>一个只聊生活的视频社区</h3>
+          <p>糖心vlog 成立于一群热爱日常记录的创作者之手。我们希望给每一个愿意拿起手机拍下生活的人，留一块安静、友善、有回应的角落。</p>
+          <ul>
+            <li>真实第一：不摆拍、不夸张，日常即内容</li>
+            <li>友善氛围：评论区只留鼓励，不制造焦虑</li>
+            <li>长期主义：鼓励持续记录，而不是一次爆款</li>
+            <li>轻量上手：手机拍摄即可完成一支vlog</li>
+          </ul>
+        </div>
+        <div class="stat-row">
+          <div class="stat-box">
+            <b>28,600+</b>
+            <small>生活记录作品</small>
+          </div>
+          <div class="stat-box">
+            <b>6,400+</b>
+            <small>日常创作者</small>
+          </div>
+          <div class="stat-box">
+            <b>12</b>
+            <small>日常分类频道</small>
+          </div>
+          <div class="stat-box">
+            <b>365</b>
+            <small>天持续更新倡议</small>
+          </div>
+        </div>
+      </div>
+      <div class="about-grid">
+        <article class="about-card">
+          <div class="icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#e8899e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2.5" y="6" width="13" height="12" rx="3"/>
+              <path d="M15.5 11l6-3.5v9L15.5 13z"/>
+            </svg>
+          </div>
+          <h3>镜头对准日常</h3>
+          <p>清晨的窗光、午后的咖啡、深夜的一碗面，都值得按下录制键。糖心vlog 把最普通的场景，做成最耐看的内容。</p>
+        </article>
+        <article class="about-card">
+          <div class="icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#e8899e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 20s-7-4.4-7-9.2A4.1 4.1 0 0 1 12 8a4.1 4.1 0 0 1 7 2.8C19 15.6 12 20 12 20z"/>
+            </svg>
+          </div>
+          <h3>治愈系表达</h3>
+          <p>不贩卖焦虑，不制造对立。这里的内容节奏舒缓、配乐柔软，适合在通勤路上、睡前十分钟慢慢看完。</p>
+        </article>
+        <article class="about-card">
+          <div class="icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#e8899e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="9" cy="8" r="3.2"/>
+              <path d="M3 19c0-3.3 2.7-5.4 6-5.4s6 2.1 6 5.4"/>
+              <path d="M16.5 11.2a3 3 0 1 0 0-5.6"/>
+              <path d="M17.5 14.2c2.1.5 3.5 2.2 3.5 4.8"/>
+            </svg>
+          </div>
+          <h3>同频的陪伴</h3>
+          <p>在糖心vlog，你会遇到同样喜欢慢慢生活的人。一句「我也是这样」的留言，就是最好的回应。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="categories">
+    <div class="wrap">
+      <div class="sec-head">
+        <span>CATEGORIES</span>
+        <h2>日常分类：找到属于你的那一格</h2>
+        <p>生活有很多种样子。按你此刻的状态选择一个频道，从这里开始慢慢看。</p>
+      </div>
+      <div class="cat-grid">
+        <article class="cat-item">
+          <span class="cat-no" aria-hidden="true">01</span>
+          <h3>清晨日常</h3>
+          <p>起床、开窗、煮一壶水，把一天的起点拍得柔软一些。</p>
+          <span class="tally">3,240 支作品</span>
+        </article>
+        <article class="cat-item">
+          <span class="cat-no" aria-hidden="true">02</span>
+          <h3>一人食光</h3>
+          <p>一个人的饭也要好好吃，简单菜谱与厨房里的小确幸。</p>
+          <span class="tally">2,880 支作品</span>
+        </article>
+        <article class="cat-item">
+          <span class="cat-no" aria-hidden="true">03</span>
+          <h3>居家整理</h3>
+          <p>收好桌面、叠好衣服，整洁的空间会带来安静的内心。</p>
+          <span class="tally">1,960 支作品</span>
+        </article>
+        <article class="cat-item">
+          <span class="cat-no" aria-hidden="true">04</span>
+          <h3>城市散步</h3>
+          <p>楼下的老街、转角的树影，用脚步丈量熟悉的地方。</p>
+          <span class="tally">2,410 支作品</span>
+        </article>
+        <article class="cat-item">
+          <span class="cat-no" aria-hidden="true">05</span>
+          <h3>四季风景</h3>
+          <p>春天的花、夏天的雨、秋天的风、冬天的雪，季节都是素材。</p>
+          <span class="tally">2,050 支作品</span>
+        </article>
+        <article class="cat-item">
+          <span class="cat-no" aria-hidden="true">06</span>
+          <h3>手作时光</h3>
+          <p>编织、烘焙、种一盆绿植，让双手把时间变得具体。</p>
+          <span class="tally">1,530 支作品</span>
+        </article>
+        <article class="cat-item">
+          <span class="cat-no" aria-hidden="true">07</span>
+          <h3>学习陪伴</h3>
+          <p>安静的备考日常、读书笔记，与屏幕另一端的人一起坚持。</p>
+          <span class="tally">1,780 支作品</span>
+        </article>
+        <article class="cat-item">
+          <span class="cat-no" aria-hidden="true">08</span>
+          <h3>睡前十分钟</h3>
+          <p>关灯前的碎碎念，把一天里的小情绪轻轻收好。</p>
+          <span class="tally">1,640 支作品</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="featured">
+    <div class="wrap">
+      <div class="sec-head">
+        <span>FEATURED</span>
+        <h2>精选vlog：本周值得慢慢看的记录</h2>
+        <p>由编辑与社区共同选出，画面朴素但有温度，适合在安静的午后打开。</p>
+      </div>
+      <div class="vlog-grid">
+        <article class="vlog-card">
+          <div class="vlog-cover cover-a">
+            <span class="play-badge" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#e8899e">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </span>
+            <span class="vlog-time">08:24</span>
+          </div>
+          <div class="vlog-body">
+            <h3>六点半的厨房，一锅慢慢煮的粥</h3>
+            <p>把米洗好，等着水汽把窗户蒙上白雾。一个普通的早晨，因为耐心而变得温柔。</p>
+            <div class="tag-row">
+              <span class="tag">清晨日常</span>
+              <span class="tag">一人食光</span>
+            </div>
+            <div class="vlog-meta">
+              <span>创作者 · 小满的日常</span>
+              <span>1.8 万次观看</span>
+            </div>
+          </div>
+        </article>
+        <article class="vlog-card">
+          <div class="vlog-cover cover-b">
+            <span class="play-badge" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#e8899e">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </span>
+            <span class="vlog-time">12:07</span>
+          </div>
+          <div class="vlog-body">
+            <h3>把住了三年的房间重新收一遍</h3>
+            <p>清掉不需要的东西，留下一束花和一个空桌面。整理房间，也是整理心情。</p>
+            <div class="tag-row">
+              <span class="tag">居家整理</span>
+              <span class="tag">慢生活</span>
+            </div>
+            <div class="vlog-meta">
+              <span>创作者 · 木木阿</span>
+              <span>2.3 万次观看</span>
+            </div>
+          </div>
+        </article>
+        <article class="vlog-card">
+          <div class="vlog-cover cover-c">
+            <span class="play-badge" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#e8899e">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </span>
+            <span class="vlog-time">15:41</span>
+          </div>
+          <div class="vlog-body">
+            <h3>下班以后，沿着河边走了四十分钟</h3>
+            <p>没有目的地的散步，看路灯一盏盏亮起来。城市很吵，但此刻只听见自己的脚步。</p>
+            <div class="tag-row">
+              <span class="tag">城市散步</span>
+              <span class="tag">治愈vlog</span>
+            </div>
+            <div class="vlog-meta">
+              <span>创作者 · 走走记录</span>
+              <span>1.5 万次观看</span>
+            </div>
+          </div>
+        </article>
+        <article class="vlog-card">
+          <div class="vlog-cover cover-d">
+            <span class="play-badge" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#e8899e">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </span>
+            <span class="vlog-time">10:32</span>
+          </div>
+          <div class="vlog-body">
+            <h3>一个人备考的第九十天，桌上有盏小灯</h3>
+            <p>把每天的学习时长写在便签上，贴在墙上。慢慢来，但一直在往前走。</p>
+            <div class="tag-row">
+              <span class="tag">学习陪伴</span>
+              <span class="tag">平凡日常</span>
+            </div>
+            <div class="vlog-meta">
+              <span>创作者 · 橘子汽水</span>
+              <span>9,800 次观看</span>
+            </div>
+          </div>
+        </article>
+        <article class="vlog-card">
+          <div class="vlog-cover cover-e">
+            <span class="play-badge" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#e8899e">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </span>
+            <span class="vlog-time">07:18</span>
+          </div>
+          <div class="vlog-body">
+            <h3>第一次烤面包，房子里的味道太好了</h3>
+            <p>面粉、牛奶和一点点等待。烤箱亮起的那盏灯，把整个下午都照亮了。</p>
+            <div class="tag-row">
+              <span class="tag">手作时光</span>
+              <span class="tag">温暖瞬间</span>
+            </div>
+            <div class="vlog-meta">
+              <span>创作者 · 小麦田</span>
+              <span>1.2 万次观看</span>
+            </div>
+          </div>
+        </article>
+        <article class="vlog-card">
+          <div class="vlog-cover cover-f">
+            <span class="play-badge" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#e8899e">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </span>
+            <span class="vlog-time">09:56</span>
+          </div>
+          <div class="vlog-body">
+            <h3>窗台上的第三盆绿植，终于长出新叶</h3>
+            <p>浇水、转盆、等一个晴天。植物的生长很慢，但它从不辜负照料。</p>
+            <div class="tag-row">
+              <span class="tag">四季风景</span>
+              <span class="tag">慢生活</span>
+            </div>
+            <div class="vlog-meta">
+              <span>创作者 · 阿青手记</span>
+              <span>7,600 次观看</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="community" class="community">
+    <div class="wrap">
+      <div class="sec-head">
+        <span>COMMUNITY</span>
+        <h2>创作者社区：从一段三十秒开始</h2>
+        <p>不需要专业设备，也不需要完美脚本。糖心vlog 更在意你是否愿意开始记录。</p>
+      </div>
+      <div class="step-row">
+        <div class="step">
+          <b>1</b>
+          <h3>挑一天小事</h3>
+          <p>从最容易拍的场景开始：早晨的窗、下班的路、今晚的饭。</p>
+        </div>
+        <div class="step">
+          <b>2</b>
+          <h3>横屏拍三段</h3>
+          <p>画面尽量稳定，光线柔和即可，三十秒素材就能成片。</p>
+        </div>
+        <div class="step">
+          <b>3</b>
+          <h3>写一句真心话</h3>
+          <p>标题写清那天发生了什么，比任何技巧都更容易被看懂。</p>
+        </div>
+        <div class="step">
+          <b>4</b>
+          <h3>投递到对应频道</h3>
+          <p>选择最接近的日常分类，编辑会定期整理推荐给更多人。</p>
+        </div>
+      </div>
+      <div class="cta-panel">
+        <div>
+          <h3>把你的平凡日常交给糖心vlog</h3>
+          <p>每一次投稿，都会进入对应的日常频道；优质记录有机会出现在精选vlog栏目。</p>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-main" href="#featured">查看示例作品</a>
+          <a class="btn btn-ghost" href="#faq">了解投稿规则</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <span>FAQ</span>
+        <h2>常见问题</h2>
+        <p>第一次了解糖心vlog 时，大家问得最多的几个问题。</p>
+      </div>
+      <div class="faq-list">
+        <article class="faq-item">
+          <h3><i>Q</i>糖心vlog 是什么类型的站点？</h3>
+          <p>糖心vlog 是一个聚焦生活记录与日常分享的视频内容社区，内容以治愈、温暖的生活vlog为主，围绕吃、住、行、手作与四季记录展开。</p>
+        </article>
+        <article class="faq-item">
+          <h3><i>Q</i>拍vlog需要专业设备吗？</h3>
+          <p>不需要。手机横屏拍摄即可，注意画面稳定与光线充足。我们更看重内容是否真实自然，而不是器材参数。</p>
+        </article>
+        <article class="faq-item">
+          <h3><i>Q</i>作品一般多长比较合适？</h3>
+          <p>建议三到十分钟。三十秒到一分钟的短记录也同样欢迎，适合用来记录一个瞬间的温暖片段。</p>
+        </article>
+        <article class="faq-item">
+          <h3><i>Q</i>投稿后多久会被整理推荐？</h3>
+          <p>作品会先进入对应日常分类频道，编辑每周集中整理一次，被选入精选vlog栏目时会在频道内展示。</p>
+        </article>
+        <article class="faq-item">
+          <h3><i>Q</i>内容和社区氛围有什么要求？</h3>
+          <p>请保持纯正向的生活记录表达，不发布夸张剧情、营销导流或与生活记录无关的内容。评论区鼓励友善沟通，共同维护轻松的社区氛围。</p>
+        </article>
+        <article class="faq-item">
+          <h3><i>Q</i>可以长期只记录同一个主题吗？</h3>
+          <p>非常欢迎。很多创作者会连续记录「一百天早餐」或「一年的窗景」，这种持续性的记录往往最能体现平凡日常的变化与温度。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>糖心vlog</h4>
+        <p>再平凡的日子也藏着闪闪发光的瞬间。我们把日常记录下来，把普通的一天过成值得珍藏的甜蜜记忆。</p>
+        <p>一个安静、友善、专注生活记录的视频社区。</p>
+      </div>
+      <div>
+        <h4>站内导航</h4>
+        <ul>
+          <li><a href="#about">站点介绍</a></li>
+          <li><a href="#categories">日常分类</a></li>
+          <li><a href="#featured">精选vlog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与记录</h4>
+        <ul>
+          <li><a href="#community">创作者社区</a></li>
+          <li><a href="#community">投稿引导</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>日常频道</h4>
+        <ul>
+          <li><a href="#categories">清晨日常</a></li>
+          <li><a href="#categories">一人食光</a></li>
+          <li><a href="#categories">城市散步</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>本站内容均为生活记录与日常分享，欢迎友善交流，共同维护温暖的社区氛围。</p>
+      <p>糖心vlog · 让平凡的日子闪闪发光 · 保留所有权利</p>
+      <a class="back-top" href="#top">回到页面顶部</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
